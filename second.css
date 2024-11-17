@@ -1,0 +1,89 @@
+/*.back{
+    background-image: url("../images/Background\ 16.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin:0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    color: rgb(91, 93, 93);
+}
+
+h1{
+    text-align: center;
+    font-size: 80px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.box{
+    display: inline-block;
+    background-color: rgb(179, 176, 172);
+    padding: 40px 20px;
+    margin-left: 45%;
+    border-radius: 20px;
+    
+}
+
+.but{
+    background-color: rgb(179, 176, 172);
+    border-radius: 20px;
+    padding: 5px 10px;
+    
+    font-family: 'Times New Roman', Times, serif;
+}*/
+
+/* Background style */
+.back {
+    background-image: url("../images/Background\ 16.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    color: rgb(91, 93, 93);
+}
+
+/* Add keyframes for text animation */
+@keyframes text-appear {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    50% {
+        opacity: 0.5;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Style and animation for h1 */
+h1 {
+    text-align: center;
+    font-size: 80px;
+    font-family: 'Times New Roman', Times, serif;
+    animation: text-appear 2s ease-out forwards;
+}
+
+/* Style for the box */
+.box {
+    display: inline-block;
+    background-color: rgb(179, 176, 172);
+    padding: 40px 20px;
+    margin-left: 45%;
+    border-radius: 20px;
+    margin-top:9%;
+}
+
+/* Style for the button */
+.but {
+    background-color: rgb(179, 176, 172);
+    border-radius: 20px;
+    padding: 5px 10px;
+    font-family: 'Times New Roman', Times, serif;
+}

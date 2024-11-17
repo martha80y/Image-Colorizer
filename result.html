@@ -1,0 +1,132 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colorization Result</title>
+    
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px;
+        }
+        .image-box {
+            text-align: center;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        h1{
+            text-align: center;
+            font-size:80px;
+            
+        }
+        .back{
+            background-color:White;
+        }
+        .bts{
+            text-align: center;
+            border-radius: 10px;
+        }
+
+    </style>
+</head>
+<body class="back">
+    <h1>Colorization Result</h1>
+    <div class="container">
+        <div class="image-box">
+            <h3>Original Image</h3>
+            <img src="{{ original_image }}" alt="Original Image">
+        </div>
+        <div class="image-box">
+            <h3>Colorized Image</h3>
+            <img src="{{ colorized_image }}" alt="Colorized Image">
+        </div>
+    </div>
+    <div class="bts">
+      /// <!-- <a href="/download/original.png" download>
+            <button>Download Original Image</button>
+        </a>///
+        <a href="/download/colorized.png" download>
+            <button type="submit">Download Colorized Image</button>
+        </a>
+    </div>
+</body>
+</html>-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colorization Result</title>
+    
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px;
+        }
+        .image-box {
+            text-align: center;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        .header {
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 80px;
+            font-weight: 100;
+            letter-spacing: 2px;
+            text-align: center;
+            color: #f35626;
+            background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -webkit-animation: hue 10s infinite linear;
+        }
+        @-webkit-keyframes hue {
+            from {
+                -webkit-filter: hue-rotate(0deg);
+            }
+            to {
+                -webkit-filter: hue-rotate(-360deg);
+            }
+        }
+        .back {
+            background-image:url("../static/images/bubble.jpg");
+            background-size: cover;
+        }
+        .bts {
+            text-align: center;
+            border-radius: 10px;
+            padding: 10px;
+            margin-left:42%;
+            background-color:skyblue;
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body class="back">
+    <h1 class="header">Colorization Result</h1>
+    <div class="container">
+        <div class="image-box">
+            <h2>Original Image</h2>
+            <img src="{{ original_image }}" alt="Original Image">
+        </div>
+        <div class="image-box">
+            <h2>Colorized Image</h2>
+            <img src="{{ colorized_image }}" alt="Colorized Image">
+        </div>
+    </div>
+    
+        <a href="/download/colorized.png" download>
+            <button type="submit" class="bts">Download Colorized Image</button>
+        </a>
+    
+</body>
+</html>
+
